@@ -69,7 +69,7 @@ body {
   }
   
   .nav-buttons a {
-    background-color: #1a4e9b;
+    background-color: gray;
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
@@ -79,6 +79,6 @@ body {
   }
   
   .nav-buttons a:hover {
-    background-color: #003f7d;
+    background-color: #444;
   }
   
