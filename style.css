@@ -70,16 +70,16 @@ h3 {
 }
 
 .cert-img {
-  width: 250px;    /* 圖片容器寬度 */
-  height: 200px;   /* 圖片容器高度 */
-  object-fit: contain; /* 縮放圖片以完整顯示 */
-  background-color: #fff; /* 避免透明圖片破版，可以加白底 */
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #fff;
   padding: 5px;
   transition: transform 0.3s ease;
 }
 
 .cert-img:hover {
-  transform: scale(2); /* 滑鼠移上去時放大1.05倍 */
+  transform: scale(2);
 }
 .content-block {
   background-color: white;
