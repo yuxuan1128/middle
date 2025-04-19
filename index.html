@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>個人簡歷 - 董宇瑄</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="header">
-      <img src="me.jpg" alt="個人照片" class="profile-img" />
+      <img src="image/me.jpg" alt="個人照片" class="profile-img" />
       <h1>董　宇　瑄</h1>
-      <h2>Dong　Yu　Syuan</h2>
+      <h2>Tung　Yu　Hsuan</h2>
+      <h2>中原大學資訊管理學系</h2>
     </div>
   </header>
 
@@ -21,45 +23,69 @@
     <a href="#cert">證書</a>
     <a href="#special">特殊經歷</a>
     <a href="#club">社團經歷</a>
+    <a href="#skill">程式技能</a>
   </nav>
 
-  <article>
-    <section id="club">
-      <h3>社團經歷</h3>
-      <p>大一：嘻研社社員</p>
-      <p>大二：嘻研社教學</p>
-      <p>大三：土木系系學會執秘</p>
-    </section>
+  <div class="container">
+    <article>
+      <section id="club" class="content-block">
+        <h3>社團經歷</h3>
+        <p>大一：嘻研社社員</p>
+        <p>大二：嘻研社教學</p>
+        <p>大三：土木系系學會執秘</p>
+      </section>
 
-    <section id="special">
-      <h3>特殊經歷</h3>
-      <p>宜蘭縣第八屆Scratch競賽國中動畫組 特優</p>
-      <p>宜蘭縣第九屆Scratch競賽國中動畫組 優等</p>
-      <p>2018宜蘭縣童玩節擔任親善大使</p>
-    </section>
+      <section id="special" class="content-block">
+        <h3>特殊經歷</h3>
+        <p>宜蘭縣第八屆Scratch競賽國中動畫組 特優</p>
+        <p>宜蘭縣第九屆Scratch競賽國中動畫組 優等</p>
+        <p>2018宜蘭縣童玩節擔任親善大使</p>
+      </section>
 
-    <section id="cert">
-      <h3>證書</h3>
-      <p>全國心算測驗 一段合格</p>
-      <p>全國珠算測驗 三合格</p>
-    </section>
+      <section id="cert" class="content-block">
+        <h3>證書</h3>
+        <p>全國心算測驗 一段合格</p>
+        <p>全國珠算測驗 三段合格</p>
+      </section>
 
-    <section id="work">
-      <h3>打工經歷</h3>
-      <hr />
-    </section>
-  </article>
+      <section id="work" class="content-block">
+        <h3>打工經歷</h3>
+        <p>早餐店內外場</p>
+        <p>統一超商工讀生</p>
+        <p>慕里諾餐飲股份有限公司 內外場</p>
+        <p>酒吧工讀生</p>
+        <p>哈皮樂園工讀生</p>
+      </section>
 
-  <aside>
-    <h3>基本資料</h3>
-    <p><strong>姓名：</strong>董宇瑄</p>
-    <p><strong>性別：</strong>女</p>
-    <p><strong>就讀：</strong>中原大學資訊管理學系</p>
-  </aside>
+      <section id="skill" class="content-block">
+        <h3>程式技能</h3>
+        <div class="circle-container">
+          <div class="circle" data-percent="70"><span>Java</span></div>
+          <div class="circle" data-percent="75"><span>Python</span></div>
+          <div class="circle" data-percent="60"><span>HTML</span></div>
+        </div>
+      </section>
+      
+    </article>
+
+  </div>
 
   <div class="clearfix"></div>
 
-
+  <footer id="contact">
+    <h3>聯絡我</h3>
+    <div class="contact-icons">
+      <a href="mailto:seer147258@gmail.com" target="_blank">
+        <img src="image/email.jpg" alt="Email">
+      </a>
+      <a href="https://www.instagram.com/yuxuan1128_" target="_blank">
+        <img src="image/ig.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/yuxuan1128?locale=zh_TW" target="_blank">
+        <img src="image/fb.jpg" alt="Facebook">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
 
