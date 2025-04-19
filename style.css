@@ -69,6 +69,18 @@ h3 {
   background-color: #444;
 }
 
+.cert-img {
+  width: 250px;    /* 圖片容器寬度 */
+  height: 200px;   /* 圖片容器高度 */
+  object-fit: contain; /* 縮放圖片以完整顯示 */
+  background-color: #fff; /* 避免透明圖片破版，可以加白底 */
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.cert-img:hover {
+  transform: scale(2); /* 滑鼠移上去時放大1.05倍 */
+}
 .content-block {
   background-color: white;
   padding: 25px;
@@ -87,7 +99,7 @@ h3 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: conic-gradient(#a5bdfd calc(var(--percent) * 1%), #e8ecf4 0%);
+  background: conic-gradient(#6C6C6C calc(var(--percent) * 1%),#F0F0F0 0%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,11 +120,11 @@ h3 {
   font-size: 14px;
 }
 
-/* 設定每個圓圈的百分比 */
 .circle[data-percent="70"] { --percent: 70; }
 .circle[data-percent="75"] { --percent: 75; }
 .circle[data-percent="60"] { --percent: 60; }
-/* 外層容器置中 & 排列 */
+
+
 footer {
   text-align: center;
   padding: 40px 20px;
@@ -127,7 +139,6 @@ footer .contact-icons {
   margin-top: 20px;
 }
 
-/* 統一圖片大小 & 置中 */
 footer .contact-icons img {
   width: 60px;
   height: 60px;
@@ -139,4 +150,53 @@ footer .contact-icons img {
 
 footer .contact-icons a:hover {
   opacity: 0.8;
+}
+
+details {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+details:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+summary::marker {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::marker {
+  transform: rotate(90deg);
+}
+
+details > *:not(summary) {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  overflow: hidden;
+}
+
+details[open] > *:not(summary) {
+  opacity: 1;
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+details p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
 }
